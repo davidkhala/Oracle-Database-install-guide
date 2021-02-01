@@ -1,5 +1,5 @@
-# Oracle-Database-installer
-Oracle Database installer for supported OS
+# Oracle-Database-install-guide
+Oracle Database install guideline for supported OS
 
 
 ## Prerequisite
