@@ -3,11 +3,11 @@
 
 ## Registry
 - Oracle Unbreakable Linux Network (ULN)
+    - already configured in Oracle Linux
 - Oracle Linux DVDs. 
     - [Oracle yum](https://yum.oracle.com/oracle-linux-isos.html)
     - [Oracle Software Delivery Cloud website](https://edelivery.oracle.com/linux)
-- Download and configure the yum repository for your system using the Oracle Linux
-yum server for your Oracle Linux release.[??]
+
 
 ## Please DO NOT...
 - **Retry**. Do not install Oracle Database Preinstallation RPM again on the same system
