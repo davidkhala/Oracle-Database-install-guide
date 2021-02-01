@@ -25,7 +25,20 @@ Oracle Database install guideline for supported OS
 - Oracle recommends that you allocate approximately 100 GB for applying any future patches
 
 
-## Installation by Oracle Universal Installer (OUI)
+## Installation
 - Ensure cron jobs do not run during installation    
 
+### Download
+- I recommand to download from [Oracle Software Delivery Cloud Portal](https://edelivery.oracle.com/)
+- Browser-based download
+    - Categories and their shortname 
+        - License:          DLP
+        - Release:          REL
+        - Download Package: DLP
+    - Choose `REL:Oracle Database 19.3.0.0.0 - Long Term Release` and your platform/OS (such as Linux-x86_64)
+- Shell-based download
+    - Execute [wget.sh](./wget.sh) to download Oracle Database 19.3.0.0.0 (interactively authN included)
 
+
+## TBC
+ // by Oracle Universal Installer (OUI)
