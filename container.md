@@ -7,6 +7,6 @@
     1. docker pull
         - EE: `docker pull container-registry.oracle.com/database/enterprise:latest`
     1. docker run
-        - EE: `docker run --name <oracle-db> container-registry.oracle.com/database/enterprise`
+        - EE: `docker run --name <oracle-db> -p 1521:1521 container-registry.oracle.com/database/enterprise`
 
 
