@@ -1,12 +1,14 @@
-
-## From [Oracle Container Registry](https://container-registry.oracle.com/pls/apex/f?p=113:1:921071864780:::1:P1_BUSINESS_AREA:3)
+# From [Oracle Container Registry](https://container-registry.oracle.com/pls/apex/f?p=113:1:921071864780:::1:P1_BUSINESS_AREA:3)
 - Available version: EE, SE 2, RAC
-- Steps
-    1. Configure docker registry locally
-    1. `docker login`
-    1. docker pull
-        - EE: `docker pull container-registry.oracle.com/database/enterprise:latest`
-    1. docker run
-        - EE: `docker run --name <oracle-db> -p 1521:1521  -e ORACLE_PWD=<your_database_password> container-registry.oracle.com/database/enterprise`
+    
+## Steps 
+1. Configure docker registry locally
+1. `docker login`
+1. docker pull
+    - EE: `docker pull container-registry.oracle.com/database/enterprise:latest`
+1. docker run
+    - EE: `docker run --name <oracle-db> -p 1521:1521 -e ORACLE_PWD=<your_database_password> container-registry.oracle.com/database/enterprise`
 
-
+## Caveats
+- Oracle Data Guard is not supported.
+- The minimum requirements for the container is 8 GB of disk space and 2 GB of memory.
