@@ -9,6 +9,9 @@
 1. docker run
     - EE: `docker run --name <oracle-db> -p 1521:1521 -e ORACLE_PWD=<your_database_password> container-registry.oracle.com/database/enterprise`
 
+## Connecting from outside of the container
+- [docker userland-proxy issue](https://franckpachot.medium.com/19c-instant-client-and-docker-1566630ab20e)
+
 ## Caveats
 - Oracle Data Guard is not supported.
 - The minimum requirements for the container is 8 GB of disk space and 2 GB of memory.
