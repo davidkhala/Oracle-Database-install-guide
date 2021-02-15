@@ -12,7 +12,7 @@
 ## Connecting from outside of the container
 - [docker userland-proxy issue](https://franckpachot.medium.com/19c-instant-client-and-docker-1566630ab20e)
     - Solution 1: change container DB config `docker exec -t <oracle-db> bash -c 'echo DISABLE_OOB=ON > $ORACLE_HOME/network/admin/sqlnet.ora'`
-
+        - or `sed "s/DISABLE_OOB=OFF/DISABLE_OOB=ON/" -i $ORACLE_HOME/network/admin/sqlnet.ora`
 ## Caveats
 - Oracle Data Guard is not supported.
 - The minimum requirements for the container is 8 GB of disk space and 2 GB of memory.
