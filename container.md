@@ -13,7 +13,7 @@
 - [ORA-12637: Packet receive failed](https://franckpachot.medium.com/19c-instant-client-and-docker-1566630ab20e)
     - Solution 1: change container DB config
         ```
-        docker exec -t <oracle-db> bash -c 'file=$ORACLE_HOME/network/admin/sqlnet.ora; sed "s/DISABLE_OOB=OFF/DISABLE_OOB=ON/" -i $file || echo DISABLE_OOB=ON > $file'
+        docker exec -t <oracle-db> bash -c 'file=$ORACLE_HOME/network/admin/sqlnet.ora; grep DISABLE_OOB $file && sed s/DISABLE_OOB/DISABLE_OOB=ON/ -i $file || echo DISABLE_OOB=ON >> $file'
         ```
         
 ## Caveats
