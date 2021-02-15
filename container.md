@@ -11,7 +11,7 @@
 
 ## Connecting from outside of the container
 - [docker userland-proxy issue](https://franckpachot.medium.com/19c-instant-client-and-docker-1566630ab20e)
-    - Solution 1: change container DB config `docker exec -t <oracle-db> bash -ic 'echo DISABLE_OOB=ON > $ORACLE_HOME/network/admin/sqlnet.ora`
+    - Solution 1: change container DB config `docker exec -t <oracle-db> bash -ic 'echo DISABLE_OOB=ON > $ORACLE_HOME/network/admin/sqlnet.ora'`
 
 ## Caveats
 - Oracle Data Guard is not supported.
