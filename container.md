@@ -10,7 +10,7 @@
     - EE: `docker run --name <oracle-db> -p 1521:1521 -e ORACLE_PWD=<your_database_password> container-registry.oracle.com/database/enterprise`
 
 ## Connecting from outside of the container
-- [docker userland-proxy issue](https://franckpachot.medium.com/19c-instant-client-and-docker-1566630ab20e)
+- [ORA-12637: Packet receive failed](https://franckpachot.medium.com/19c-instant-client-and-docker-1566630ab20e)
     - Solution 1: change container DB config `docker exec -t <oracle-db> bash -c 'echo DISABLE_OOB=ON > $ORACLE_HOME/network/admin/sqlnet.ora'`
         - or `sed "s/DISABLE_OOB=OFF/DISABLE_OOB=ON/" -i $ORACLE_HOME/network/admin/sqlnet.ora`
 ## Caveats
