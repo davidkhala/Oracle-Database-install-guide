@@ -11,8 +11,11 @@
 
 ## Connecting from outside of the container
 - [ORA-12637: Packet receive failed](https://franckpachot.medium.com/19c-instant-client-and-docker-1566630ab20e)
-    - Solution 1: change container DB config `docker exec -t <oracle-db> bash -c 'echo DISABLE_OOB=ON > $ORACLE_HOME/network/admin/sqlnet.ora'`
-        - or `sed "s/DISABLE_OOB=OFF/DISABLE_OOB=ON/" -i $ORACLE_HOME/network/admin/sqlnet.ora`
+    - Solution 1: change container DB config
+        ```
+        docker exec -t <oracle-db> bash -c 'file=$ORACLE_HOME/network/admin/sqlnet.ora; sed "s/DISABLE_OOB=OFF/DISABLE_OOB=ON/" -i $file || echo DISABLE_OOB=ON > $file'
+        ```
+        
 ## Caveats
 - Oracle Data Guard is not supported.
 - The minimum requirements for the container is 8 GB of disk space and 2 GB of memory.
