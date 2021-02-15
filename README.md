@@ -1,4 +1,4 @@
-# Oracle-Database-install-guide
+# Oracle Database install guide
 Oracle Database install guideline for supported OS
 
 
