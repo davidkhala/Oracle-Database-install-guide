@@ -6,7 +6,7 @@
 1. docker pull
     - EE: `docker pull container-registry.oracle.com/database/enterprise:latest`
 1. docker run
-    - EE: `docker run --name <oracle-db> -p 1521:1521 -e ORACLE_PWD=<your_database_password> container-registry.oracle.com/database/enterprise`
+    - EE [sample](https://github.com/davidkhala/oracle-database-install-guide/wiki/CheatSheet#run-oracle-ee-as-docker-container): `docker run --name <oracle-db> -p 1521:1521 -e ORACLE_PWD=<your_database_password> container-registry.oracle.com/database/enterprise`
     - The highlighted configuration options are:
         - `ORACLE_SID`=`ORCLCDB`
         - `ORACLE_PDB`=`ORCLPDB1`
