@@ -2,8 +2,7 @@
 - Available version: EE, SE 2, RAC
     
 ## Steps 
-1. Configure docker registry locally
-1. `docker login`
+1. `docker login container-registry.oracle.com`
 1. docker pull
     - EE: `docker pull container-registry.oracle.com/database/enterprise:latest`
 1. docker run
