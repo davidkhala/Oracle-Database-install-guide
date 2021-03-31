@@ -10,6 +10,3 @@ Oracle Database install guideline for supported OS
 - [container](./container.md)
 
 
-## Issues
- - Cloud Market： Oracle Database 12.2.0.1.200414
-    - ?? What OS
